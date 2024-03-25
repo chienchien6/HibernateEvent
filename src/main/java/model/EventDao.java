@@ -90,9 +90,7 @@ public class EventDao implements EventDaoInterface {
 		
 		String hql="from Event e where e.startTime =:st";
 		
-		Query<Event> query = session.createQuery(hql,Event.class);
-//		query.setParameter("st",startTime);
-		
+		Query<Event> query = session.createQuery(hql,Event.class);	
 		query.setParameter("st",java.sql.Date.valueOf(startDate));
 		
 		List<Event> resultList = query.getResultList();
