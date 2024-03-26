@@ -66,7 +66,7 @@ public class WSinsert extends HttpServlet {
         LocalDate EndTime = LocalDate.parse(deadline,date);
         eventBean.setSignupEndtime(java.sql.Date.valueOf(EndTime));
         
-        eventBean.setEventId(Integer.parseInt(request.getParameter("EVENTID")));
+//        eventBean.setEventId(Integer.parseInt(request.getParameter("EVENTID")));
 		eventBean.setEventName("EVENT_NAME");
 		eventBean.setEventDetail("EVENT_DETAIL");
 		eventBean.setEventCategory("EVENT_CATEGORY");
